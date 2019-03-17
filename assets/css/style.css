@@ -1,0 +1,109 @@
+body {
+    background-color: lavender;
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: helvetica !important;
+}
+
+#instructions {
+    background-color: white;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+}
+
+#randomNumDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 15%;
+    height: 15%;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+#currNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #330000;
+    color: #b30000;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#winLoss {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 15%;
+    height: 15%;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2f0f0;
+    width: 50%;
+    height: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#goalNum {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 15%;
+    height: 10%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#currNum {
+    color:  #66ccff;
+}
+p, strong {
+    font-size: 18px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#winLoss, #randomNumDiv, #totalScore, #buttons, #instructions {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button {
+    box-shadow: 0 8px #a6a6a6;
+    display: block;
+    border-radius: 10px;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 4px #a6a6a6;
+    top: 2px;
+}
+
+button:active {
+    box-shadow: none;
+    top: 2px;
+}
+
+img {
+    border-radius: 10px;
+}

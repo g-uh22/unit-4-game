@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-        <h1 id="result">Click a button to get closer to the number displayed.</h1>
-        <div id="goalNum"></div>
-        <div id="currNum"></div>
-        <div id="buttons"></div>
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="instructions">
+        <h3>Here's how you play the game:</h3>
+        </br>
+        <ol>
+            <li>You will be given a random number at the start of the game.<span>"Goal Number"</span></li>
+            <li>There are four items below.</li>
+            <ul>
+                <li id="timepiece">Timepiece</li>
+                <li id="hat">Hat</li>
+                <li id="glasses">Glasses</li>
+                <li id="teapot">Teapot</li>
+            </ul>
+            <li>By clicking on an item, you will add a specific amount of points to your total score.</li>
+            <li>You win the game by matching your total score to the random number.</li>
+            <li>You lose the game if your total score goes above the random number.</li>
+            <li>The value of each item is hidden from you until you click on it.</li>
+            <li>Each time when the game starts, the game will change the values of each item.</li>
+        </ol>
+    </div>
+    <div class="goalNum">
+        <h2>Goal Number:
+            <span id="goalNum"></span>
+        </h2>
+    </div>
+    <div class="winsAndLosses">
+        <h2>Wins:
+            <span id="numberWins"></span>
+            </br>
+            Losses:
+            <span id="numberLosses"></span>
+        </h2>
+    </div>
+    <div id="buttons">
+        <img src="./assets/images/timepiece.png" class=gemImage id="one" alt="timepiece">
+        <img src="./assets/images/hat.png" class=gemImage id="two" alt="hat">
+        <img src="./assets/images/glasses.png" class=gemImage id="three" alt="glasses">
+        <img src="./assets/images/teapot.png" class=gemImage  id="four" alt="teapot">
+    </div>
+    <button onclick="init()">restart</button>
+    <div id="currNum">
+        <h2>Your total score is:
+            <span id="currNum"></span>
+        </h2>
+    </div>
+    <!-- <div id="restart">
         <button onclick="init()">restart</button>
-    
-        <script src="./assets/javascript/game.js"></script>
-    
+    </div> -->
+    <script src="./assets/javascript/game.js"></script>
+
 </body>
+
 </html>

@@ -19,11 +19,7 @@ const init = _ => {
 
   document.querySelector('#result').textContent = 'Click A Button to get closer to the number displayed.'
  
-//   var btnImages = ['./assets/images/glasses.png', './assets/images/hat.png', './assets/images/timepiece.png', './assets/images/teapot.png']
-//   for (let y = 0; y < btnImages.length; y++) {
-//      let images = document.getElementById('btnImages');
-//      images.appendChild(btnImages[y];
-//   }
+
 
   // generates four buttons with random values
   for (let i = 0; i < 4; i++) {
