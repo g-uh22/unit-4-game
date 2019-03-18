@@ -13,16 +13,6 @@ body {
     float: none;
 }
 
-#randomNumDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width: 15%;
-    height: 15%;
-    margin-left: 40px;
-    margin-top: 5px;
-}
 
 #currNum {
     display: flex;
@@ -37,7 +27,7 @@ body {
     margin-left: 10px;
 }
 
-#winLoss {
+#numberWins, #numberLosses {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +49,7 @@ body {
     margin-left: 10px;
 }
 
-#goalNum {
+#goalNum, .goalNum {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -82,7 +72,7 @@ img:hover {
     cursor: pointer;
 }
 
-#winLoss, #randomNumDiv, #totalScore, #buttons, #instructions {
+#numberWins, #numberLosses, #buttons, .instructions, .winsAndLosses {
     border: 1px solid black;
     border-radius: 10px;
 }
